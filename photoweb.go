@@ -10,7 +10,6 @@ import (
 	"database/sql"
 	"strings"
 	_ "github.com/go-sql-driver/mysql"
-	"math/rand"
 	"io/ioutil"
 	"github.com/satori/go.uuid"
 )
@@ -238,9 +237,7 @@ func isExists(path string) bool {
 	return os.IsExist(err)
 }
 
-func generrateRand() int {
-	return rand.Intn(3)
-}
+
 
 /*
 func checkErr(err error){
