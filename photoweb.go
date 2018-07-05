@@ -20,6 +20,7 @@ import (
 
 //lalalal
 //bendi second
+//lalalalllllll
 
 var buf []byte
 var templates map[string]*template.Template = make(map[string]*template.Template)
