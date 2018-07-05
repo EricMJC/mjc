@@ -19,6 +19,7 @@ import (
 
 
 //lalalal
+//bendi second
 
 var buf []byte
 var templates map[string]*template.Template = make(map[string]*template.Template)
