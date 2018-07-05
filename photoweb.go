@@ -15,13 +15,6 @@ import (
 )
 
 
-
-
-
-//lalalal
-//bendi second
-//lalalalllllll
-
 var buf []byte
 var templates map[string]*template.Template = make(map[string]*template.Template)
 
@@ -244,21 +237,11 @@ func isExists(path string) bool {
 	}
 	return os.IsExist(err)
 }
-//bendicaozuo
 
-
-/*
-func checkErr(err error){
-	if err!= nil {
-		err.Error()
-	}
-}
-*/
 type IMG struct {
 	I_id    int
 	ImgPath string
 }
-
 const (
 	userName = "root"
 	password = "173167479"
@@ -266,11 +249,8 @@ const (
 	port     = "3306"
 	dbName   = "mysqlTmd"
 )
-
 var DB *sql.DB
-
 func init() {
-
 	var err error
 	path := strings.Join([]string{userName, ":", password, "@tcp(", ip, ":", port, ")/", dbName, "?charset=utf8"}, "")
 	DB, err = sql.Open("mysql", path)
@@ -285,7 +265,6 @@ func init() {
 		return
 	}
 	fmt.Println("connect success")
-
 }
 func main() {
 	http.HandleFunc("/upload", upload)
